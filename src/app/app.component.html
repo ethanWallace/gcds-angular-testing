@@ -1,0 +1,27 @@
+<main class="main">
+  <p>
+    <app-click-me></app-click-me>
+  </p>
+
+  <app-click-me-gcds></app-click-me-gcds>
+  
+
+  <gcds-input label="change test" id="change" name="change"></gcds-input>
+  <script>
+    let input = document.getElementById('change');
+    input.addEventListener('input', function () {
+      console.log('change')
+    })
+  </script>
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
